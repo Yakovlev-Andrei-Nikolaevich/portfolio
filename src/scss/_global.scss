@@ -1,0 +1,73 @@
+@import './_fonts';
+@import './_vars';
+@import '../../node_modules/aos/dist/aos';
+@import '../../node_modules/normalize.css/normalize';
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    resize: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #000;
+    @extend %ubuntu-500;
+    color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    user-select: none;
+}
+
+.container {
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+@keyframes flying-btn {
+    0% {
+        transform: translateY(2px);
+    }
+    100% {
+        transform: translateY(6px);
+    }
+}
+
+@keyframes blur-bg {
+    0% {
+        filter: blur(25px);
+    }
+    100% {
+        filter: blur(0);
+    }
+}
+
+.blur-bg {
+    backdrop-filter: blur(10px);
+}
+
+.heading {
+  font-size: 24px;
+}
+
+.link {
+  text-decoration: underline;
+  color: #fff;
+}

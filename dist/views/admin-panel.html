@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">
+    <title>Admin-panel</title>
+</head>
+
+<body class="bg-gradient-blue">
+    <div class="container">
+        <form class="admin__form admin__form-panel" action="/add/project" method="POST">
+            <h3 class="admin__heading">Добавить проект</h3>
+            <label class="admin__form-label" for="title_main">Заголовок</label>
+            <input class="admin__form-data" data-valval="titleProject" type="text" name="title_main" id="title_main" />
+            <label class="admin__form-label" for="title_img">Заголовок к фото, видео</label>
+            <input class="admin__form-data" data-valval="titleProjectNameImg" type="text" name="title_img" id="title_img" />
+            <ul class="admin__files">
+                <li>
+                    <label class="admin__form-label admin__form-label-file" for="img">Фото, видео</label>
+                    <input class="admin__form-file hide" type="file" name="img" id="img" />
+                </li>
+            </ul>
+            <button class="admin__form-file-add" type="button"></button>
+            <input class="admin__form-submit" type="submit" value="Добавить" />
+        </form>
+
+        <form class="admin__form admin__form-delete" action="/remove/project" method="POST">
+            <h3 class="admin__heading">Удалить проект</h3>
+            <label class="admin__form-label" for="name">Заголовок проекта</label>
+            <input class="admin__form-data" data-valval="titleProjectToRemove" type="text" name="name" id="name" />
+            <input class="admin__form-submit" type="submit" value="Удалить" />
+        </form>
+    </div>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

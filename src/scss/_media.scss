@@ -1,0 +1,494 @@
+@media (max-width: 1170px) {
+  .info {
+    &__block-videos {
+      flex-direction: column;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .title {
+    &__block {
+      &-heading {
+        &-h1 {
+          font-size: 65px;
+        }
+      }
+      &-desc {
+        font-size: 22px;
+      }
+    }
+  }
+  .info {
+    &__block-tools-item {
+      font-size: 18px;
+    }
+  }
+  .heading {
+    font-size: 20px;
+  }
+  .scientific-activity {
+    &__block {
+      &-item-links {
+        &-heading {
+          font-size: 1.2em;
+        }
+      }
+      &-link {
+        font-size: 1.1em;
+      }
+    }
+  }
+  .footer {
+    &__block {
+      &-heading {
+        font-size: 22px;
+      }
+      &-list-item {
+        font-size: 18px;
+        img {
+          max-width: 35px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .heading {
+    font-size: 18px;
+  }
+  .info {
+    &__block {
+      &-bottom {
+        h2 {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+  .title {
+    &__block {
+      &-desc {
+        max-width: 600px;
+        line-height: 30px;
+        font-size: 20px;
+      }
+      &-heading {
+        &-h1 {
+          font-size: 56px;
+        }
+      }
+    }
+  }
+  .link {
+    font-size: 16px;
+  }
+  .footer {
+    &__block {
+      &-list-item {
+        font-size: 16px;
+      }
+    }
+  }
+  .example-work {
+    &__block {
+      &-p {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .header {
+    top: 0;
+    &__btn {
+      display: block;
+      width: 40px;
+      height: 40px;
+      border: none;
+      background: #1D232F;
+      border-radius: 3px;
+      cursor: pointer;
+      margin-top: 25px;
+      position: relative;
+      span {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 70%;
+        height: .5px;
+        background: #fff;
+        border-radius: 3px;
+        transition: .4s;
+        &:nth-child(1) {
+          top: 9px;
+        }
+        &:nth-child(2) {
+          top: 50%;
+        }
+        &:nth-child(3) {
+          bottom: 9px;
+        }
+      }
+    }
+    &__nav {
+      height: 100vh;
+      position: absolute;
+      right: 0;
+      top: 0;
+      min-width: 250px;
+      border-radius: 0;
+      transition: .4s;
+      transform: translateX(400px);
+    }
+    &__list {
+      flex-direction: column;
+      &-item {
+        &:not(:last-child) {
+          margin: 0 0 15px 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 740px) {
+  .title {
+    &__block {
+      &-heading {
+        &-h1 {
+          font-size: 50px;
+        }
+      }
+      &-desc {
+        font-size: 18px;
+      }
+    }
+  }
+  .skills {
+    min-height: auto;
+    padding: 50px 0;
+    &__content {
+      &-img {
+        display: none;
+      }
+    }
+    &__block {
+      padding: 0;
+      margin: 0;
+    }
+  }
+  .example-work {
+    &__content {
+      flex-direction: column !important;
+    }
+    &__block {
+      &-img {
+        width: 100%;
+        margin: 0;
+      }
+      &-text {
+        width: 100%;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+      }
+      &-p {
+        text-align: center;
+      }
+      &-link {
+        width: 100%;
+        text-align: center;
+      }
+      &-images {
+        flex-direction: column;
+        &-item {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          &:not(:last-child) {
+            margin-bottom: 10px;
+          }
+          &:last-child {
+            margin-left: 0;
+          }
+        }
+      } 
+    }
+  }
+  .info {
+    &__block {
+      &-videos-item {
+        iframe {
+          width: 100% !important;
+          height: auto !important;
+        }
+      }
+      &-img {
+        width: auto;
+      }
+      &-top {
+        flex-direction: column;
+      }
+      &-tools-item {
+        list-style-type: initial;
+      }
+    }
+  }
+  .scientific-activity {
+    padding: 50px 0;
+    &__block {
+      &-item-images {
+        flex-direction: column;
+        margin-bottom: 25px;
+      }
+      &-list {
+        flex-direction: unset;
+        justify-content: center;
+        flex-wrap: wrap;
+        &-item {
+          width: auto;
+          padding: 10px;
+          img {
+            max-width: 100%;
+          }
+          &:not(:last-child) {
+            margin-bottom: 0;
+          }
+        }
+      }
+      &-item-block {
+        &:not(:last-child) {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+  .footer {
+    &__content {
+      flex-direction: column;
+    }
+    &__block {
+      width: 80%;
+      margin: 0 auto;
+      &:not(:last-child) {
+        margin-bottom: 25px;
+      }
+      &-heading {
+        font-size: 20px;
+      }
+      &-desc {
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .title {
+    &__block {
+      &-heading-h1 {
+        font-size: 45px;
+      }
+      &-desc {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    &__block {
+      &-heading-h3 {
+        font-size: 12px;
+      }
+      &-heading-h1 {
+        font-size: 35px;
+      }
+    }
+  }
+  .project {
+    &__list-images {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .header {
+    &__nav {
+      min-width: 190px;
+    }
+    &__list {
+      &-item {
+        font-size: 1em;
+      }
+    }
+  }
+  .project {
+    &__heading {
+      span:not(:first-child) {
+        font-size: 16px;
+      }
+    }
+  }
+  .title {
+    &__block {
+      &-heading-h1 {
+        font-size: 30px;
+      }
+      &-desc {
+        font-size: 14px;
+      }
+    }
+  }
+  .skills {
+    &__block {
+      &-list {
+        li {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  .info {
+    &__block {
+      &-bottom {
+        h2 {
+          font-size: 17px;
+        }
+      }
+      &-tools {
+        &-item {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+  .scientific-activity {
+    &__block {
+      &-item {
+        &-links-heading {
+          font-size: 1em;
+        }
+      }
+    }
+  }
+  .achievements {
+    &__info {
+      &-heading {
+        font-size: 17px;
+      }
+      &-list-item {
+        font-size: 15px;
+      }
+    }
+  }
+  .footer {
+    &__block {
+      &-heading {
+        font-size: 17px;
+      }
+    }
+  }
+  .heading {
+    font-size: 17px;
+  }
+  .link {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 385px) {
+  .title {
+    &__block-heading-h1 {
+      font-size: 27px;
+    }
+  }
+  .footer {
+    &__block {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 352px) {
+  .title {
+    &__block {
+      &-heading-h1 {
+        font-size: 22px;
+      }
+      &-desc {
+        line-height: 22px;
+      }
+    }
+  }
+  .skills {
+    &__block {
+      &-list {
+        li {
+          font-size: 13px;
+        }
+      }
+      &-desc {
+        font-size: 13px;
+      }
+    }
+  }
+  .info {
+    &__block {
+      &-bottom {
+        h2 {
+          font-size: 16px;
+        }
+      }
+      &-tools-item {
+        font-size: 14px;
+      }
+    }
+  }
+  .example-work {
+    &__block {
+      &-p {
+        font-size: 14px;
+      }
+    }
+  }
+  .achievements {
+    &__info {
+      &-heading {
+        font-size: 15px;
+      }
+      &-list-item {
+        font-size: 14px;
+      }
+    }
+  }
+  .footer {
+    &__block {
+      &-heading {
+        font-size: 16px;
+      }
+      &-list {
+        &-item {
+          img {
+            max-width: 30px;
+          }
+        }
+      }
+    }
+  }
+  .link {
+    font-size: 14px;
+  }
+  .heading {
+    font-size: 16px;
+  }
+}
