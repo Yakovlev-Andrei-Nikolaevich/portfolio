@@ -4,11 +4,15 @@ import { Valval } from 'valval';
 AOS.init();
 
 const preolaider = () => {
+    const preloader_block = document.querySelector('.preloader');
+
     window.addEventListener('load', () => {
-        document.documentElement.classList.remove('blur-bg');
+        document.documentElement.classList.remove('no-scroll');
+        preloader_block.classList.add('hide');
     });
     window.addEventListener('DOMContentLoaded', () => {
-        document.documentElement.classList.add('blur-bg');
+        document.documentElement.classList.add('no-scroll');
+        preloader_block.classList.remove('hide');
     });
 }
 

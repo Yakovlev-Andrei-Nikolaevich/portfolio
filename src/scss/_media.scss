@@ -257,9 +257,7 @@
         margin-bottom: 25px;
       }
       &-list {
-        flex-direction: unset;
-        justify-content: center;
-        flex-wrap: wrap;
+        display: none;
         &-item {
           width: auto;
           padding: 0;
