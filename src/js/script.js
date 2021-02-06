@@ -168,7 +168,9 @@ function zoomer() {
             }
         });
 
-        btn.addEventListener('click', () => {
+        btn.addEventListener('click', e => {
+            e.stopPropagation();
+
             window_zoom.classList.add('hide-animation');
             document.documentElement.classList.remove('no-scroll');
 
@@ -206,6 +208,19 @@ function zoomer() {
 }
 
 zoomer();
+
+const scrollUp = () => {
+  const btn = document.querySelector('.btn-arrow-up');
+  
+  btn.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+}
+
+scrollUp();
 
 const addBlocksForFiles = () => {
     const btn = document.querySelector('.admin__form-file-add');
@@ -310,6 +325,18 @@ const showMenu = () => {
 
     rotateLines();
     checkHeightHeader();
+  });
+
+  header.addEventListener('click', e => {
+    if (e.target.classList.contains('container')) {
+      menu.classList.remove('show-right');
+      document.documentElement.classList.remove('no-scroll');
+
+      open = false;
+
+      rotateLines();
+      checkHeightHeader();
+    }
   });
 
   function rotateLines() {
