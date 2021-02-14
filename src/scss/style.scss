@@ -517,6 +517,12 @@
   &__heading {
     text-align: center;
     padding-bottom: 20px;
+    &-link {
+      display: block;
+      width: max-content;
+      margin: 15px auto 0;
+      font-size: 18px;
+    }
   }
   &__info {
     display: flex;

@@ -2709,6 +2709,15 @@ img {
   padding-bottom: 20px;
 }
 
+.achievements__heading-link {
+  display: block;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 15px auto 0;
+  font-size: 18px;
+}
+
 .achievements__info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3105,7 +3114,7 @@ img {
             flex-direction: column;
   }
   .header__list-item:not(:last-child) {
-    margin: 0 0 15px 0;
+    margin: 0 0 20px 0;
   }
 }
 
