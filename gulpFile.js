@@ -22,11 +22,6 @@ function html() {
         .pipe(dest('docs/'));
 }
 
-function views() {
-    return src('src/views/*.html')
-        .pipe(dest('docs/views/'));
-}
-
 function js() {
     return src('src/js/*.js')
         .pipe(webpack())
@@ -43,7 +38,6 @@ function images() {
 function watching() {
     watch('src/scss/*.scss', parallel(styles));
     watch('src/*.html', parallel(html));
-    watch('src/views/*.html', parallel(views));
     watch('src/js/*.js', parallel(js));
     watch('src/images/**/*', parallel(images));
 }
@@ -56,5 +50,5 @@ function server() {
     });
 }
 
-exports.build = parallel(styles, html, js, images, views);
+exports.build = parallel(styles, html, js, images);
 exports.default = parallel(exports.build, server, watching);

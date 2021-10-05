@@ -2108,10 +2108,21 @@ img {
   margin: 10px 0;
 }
 
-.title__block-heading-img {
+.title__block-img {
   margin: 40px auto;
   border-radius: 50%;
-  max-width: 150px;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .title__block-desc {

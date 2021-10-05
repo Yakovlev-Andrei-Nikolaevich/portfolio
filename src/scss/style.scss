@@ -89,11 +89,16 @@
                 font-size: 72px;
                 margin: 10px 0;
             }
-            &-img {
-                margin: 40px auto;
-                border-radius: 50%;
-                max-width: 150px;
-            }
+        }
+        &-img {
+          margin: 40px auto;
+          border-radius: 50%;
+          width: 150px;
+          height: 150px;
+          overflow: hidden;
+          display: flex;
+          justify-content: center;
+          align-items: center;
         }
         &-desc {
             font-size: 24px;
